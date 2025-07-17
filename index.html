@@ -3,46 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Malla Curricular Interactiva - Gastronomía y Negocios</title>
-    <meta name="description" content="Planifica tu carrera en Gastronomía y Negocios con nuestra malla curricular interactiva. Rastrea tu progreso académico y valida prerrequisitos.">
+    <title>Malla Curricular Interactiva - Arte Culinario y DG en Business</title>
+    <meta name="description" content="Planifica tu carrera en Arte Culinario y DG en Business con nuestra malla curricular interactiva. Rastrea tu progreso académico y valida prerrequisitos.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <h1>Malla Curricular Interactiva</h1>
-            <p class="subtitle">Gastronomía y Negocios DG</p>
-        </header>
-
-        <div class="progress-section">
-            <div class="progress-info">
-                <span class="progress-text">Progreso: <span id="progress-count">0</span> / 82 cursos</span>
-                <button id="reset-btn" class="reset-btn" title="Reiniciar selección">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <div class="min-h-screen bg-light-blue font-times">
+        <!-- Header -->
+        <header class="bg-medium-blue shadow-md py-4 px-6 relative">
+            <div class="container mx-auto">
+                <!-- Reset Button -->
+                <button id="reset-btn" class="absolute top-4 left-4 bg-accent-blue hover:bg-business-blue text-white px-3 py-1 rounded text-sm flex items-center gap-1">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M3 6h18"></path>
                         <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path>
                         <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path>
                     </svg>
+                    Limpiar todo
                 </button>
+                
+                <!-- Title -->
+                <h1 class="text-3xl font-bold text-center text-text-blue mb-4">
+                    Malla Curricular de Arte Culinario y DG en Business
+                </h1>
+                
+                <!-- Progress Bar -->
+                <div class="progress-container">
+                    <div id="celebration" class="celebration-complete hidden">
+                        <div class="text-center mb-2">
+                            <span class="text-green-600 font-medium text-sm">¡Felicidades! 🎉</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center mb-1">
+                        <span class="text-text-blue font-medium text-sm">
+                            <span id="progress-count">0</span> / 82 cursos
+                        </span>
+                    </div>
+                    <div class="progress-bar-thin">
+                        <div id="progress-fill" class="progress-fill"></div>
+                    </div>
+                </div>
             </div>
-            <div class="progress-bar">
-                <div id="progress-fill" class="progress-fill"></div>
-            </div>
-        </div>
+        </header>
 
-        <div id="celebration" class="celebration hidden">
-            <div class="celebration-content">
-                <h2>🎉 ¡Felicitaciones!</h2>
-                <p>Has completado toda la malla curricular</p>
+        <!-- Main Content -->
+        <main class="container mx-auto px-4 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-10 gap-4" id="curriculum-grid">
+                <!-- Los cursos se generarán con JavaScript -->
             </div>
-        </div>
-
-        <div class="curriculum-grid" id="curriculum-grid">
-            <!-- Los cursos se generarán con JavaScript -->
-        </div>
+        </main>
     </div>
 
     <script src="script.js"></script>

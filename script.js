@@ -1,111 +1,111 @@
-// Datos de los cursos
+// Datos de los cursos (usando los mismos datos que la aplicación React)
 const courses = [
-    // Ciclo 1
-    { id: 1, name: "ENGLISH I", cycle: 1, prerequisites: [], type: "culinary" },
-    { id: 2, name: "FUNDAMENTOS EN COCINA", cycle: 1, prerequisites: [], type: "culinary" },
-    { id: 3, name: "FUNDAMENTOS EN PASTELERÍA", cycle: 1, prerequisites: [], type: "culinary" },
-    { id: 4, name: "MATEMÁTICA BÁSICA", cycle: 1, prerequisites: [], type: "business" },
-    { id: 5, name: "METODOLOGÍA DE ESTUDIO", cycle: 1, prerequisites: [], type: "business" },
-    { id: 6, name: "DESARROLLO HUMANO", cycle: 1, prerequisites: [], type: "business" },
-    { id: 7, name: "SEGURIDAD Y SALUD EN EL TRABAJO", cycle: 1, prerequisites: [], type: "business" },
-    { id: 8, name: "ACTIVIDAD FORMATIVA I", cycle: 1, prerequisites: [], type: "elective" },
+    // Cycle 1
+    { id: 'english-1', name: 'ENGLISH I', cycle: 1, prerequisite: 'NINGUNO', type: 'culinary' },
+    { id: 'fundamentos-competencias', name: 'FUNDAMENTOS EN COMPETENCIAS DIGITALES', cycle: 1, prerequisite: 'NINGUNO', type: 'culinary' },
+    { id: 'lenguaje-1', name: 'LENGUAJE Y COMUNICACIÓN I', cycle: 1, prerequisite: 'NINGUNO', type: 'culinary' },
+    { id: 'matematica-1', name: 'MATEMÁTICA', cycle: 1, prerequisite: 'NINGUNO', type: 'culinary' },
+    { id: 'american-literature', name: 'AMERICAN LITERATURE', cycle: 1, prerequisite: 'NINGUNO', type: 'business' },
+    { id: 'ciencia-alimentos', name: 'CIENCIA DE LOS ALIMENTOS Y BEBIDAS', cycle: 1, prerequisite: 'NINGUNO', type: 'culinary' },
+    { id: 'general-biology', name: 'GENERAL BIOLOGY', cycle: 1, prerequisite: 'NINGUNO', type: 'business' },
+    { id: 'intro-arte-culinario', name: 'INTRODUCCIÓN AL ARTE CULINARIO Y SOSTENIBILIDAD', cycle: 1, prerequisite: 'NINGUNO', type: 'culinary' },
 
-    // Ciclo 2
-    { id: 9, name: "ENGLISH II", cycle: 2, prerequisites: [1], type: "culinary" },
-    { id: 10, name: "TÉCNICAS CULINARIAS BÁSICAS", cycle: 2, prerequisites: [2], type: "culinary" },
-    { id: 11, name: "TÉCNICAS BÁSICAS DE PASTELERÍA", cycle: 2, prerequisites: [3], type: "culinary" },
-    { id: 12, name: "MATEMÁTICA APLICADA", cycle: 2, prerequisites: [4], type: "business" },
-    { id: 13, name: "COMUNICACIÓN", cycle: 2, prerequisites: [], type: "business" },
-    { id: 14, name: "ADMINISTRACIÓN GENERAL", cycle: 2, prerequisites: [], type: "business" },
-    { id: 15, name: "FUNDAMENTOS DE TURISMO", cycle: 2, prerequisites: [], type: "business" },
-    { id: 16, name: "ACTIVIDAD FORMATIVA II", cycle: 2, prerequisites: [8], type: "elective" },
+    // Cycle 2
+    { id: 'admin-negocios', name: 'ADMINISTRACIÓN PARA LOS NEGOCIOS', cycle: 2, prerequisite: 'NINGUNO', type: 'culinary' },
+    { id: 'english-2', name: 'ENGLISH II', cycle: 2, prerequisite: 'ENGLISH I', type: 'culinary' },
+    { id: 'fundamentos-cocina-1', name: 'FUNDAMENTOS Y TÉCNICAS DE COCINA I', cycle: 2, prerequisite: 'CIENCIA DE LOS ALIMENTOS Y BEBIDAS', type: 'culinary' },
+    { id: 'lenguaje-2', name: 'LENGUAJE Y COMUNICACIÓN II', cycle: 2, prerequisite: 'LENGUAJE Y COMUNICACIÓN I', type: 'culinary' },
+    { id: 'matematica-2', name: 'MATEMÁTICA II', cycle: 2, prerequisite: 'MATEMÁTICA', type: 'business' },
+    { id: 'realidad-nacional', name: 'REALIDAD NACIONAL Y GLOBALIZACIÓN', cycle: 2, prerequisite: 'NINGUNO', type: 'culinary' },
+    { id: 'sanidad-higiene', name: 'SANIDAD E HIGIENE DE LOS ALIMENTOS Y BEBIDAS', cycle: 2, prerequisite: 'CIENCIA DE LOS ALIMENTOS Y BEBIDAS', type: 'culinary' },
+    { id: 'world-history', name: 'WORLD HISTORY', cycle: 2, prerequisite: 'NINGUNO', type: 'business' },
 
-    // Ciclo 3
-    { id: 17, name: "ENGLISH III", cycle: 3, prerequisites: [9], type: "culinary" },
-    { id: 18, name: "TÉCNICAS CULINARIAS INTERMEDIAS", cycle: 3, prerequisites: [10], type: "culinary" },
-    { id: 19, name: "TÉCNICAS INTERMEDIAS DE PASTELERÍA", cycle: 3, prerequisites: [11], type: "culinary" },
-    { id: 20, name: "ESTADÍSTICA", cycle: 3, prerequisites: [12], type: "business" },
-    { id: 21, name: "GESTIÓN DE PERSONAS", cycle: 3, prerequisites: [14], type: "business" },
-    { id: 22, name: "ECONOMÍA", cycle: 3, prerequisites: [], type: "business" },
-    { id: 23, name: "NUTRICIÓN", cycle: 3, prerequisites: [], type: "business" },
-    { id: 24, name: "ACTIVIDAD FORMATIVA III", cycle: 3, prerequisites: [16], type: "elective" },
+    // Cycle 3
+    { id: 'english-3', name: 'ENGLISH III', cycle: 3, prerequisite: 'ENGLISH II', type: 'culinary' },
+    { id: 'estadistica-1', name: 'ESTADÍSTICA DESCRIPTIVA E INFERENCIA ESTADÍSTICA', cycle: 3, prerequisite: 'MATEMÁTICA', type: 'culinary' },
+    { id: 'pasteleria-1', name: 'FUNDAMENTOS Y TÉCNICAS DE PASTELERÍA I', cycle: 3, prerequisite: 'SANIDAD E HIGIENE DE LOS ALIMENTOS Y BEBIDAS, FUNDAMENTOS Y TÉCNICAS DE COCINA I', type: 'culinary' },
+    { id: 'general-psychology', name: 'GENERAL PSYCHOLOGY', cycle: 3, prerequisite: 'NINGUNO', type: 'business' },
+    { id: 'gestion-empresas', name: 'GESTIÓN DE EMPRESAS', cycle: 3, prerequisite: 'ADMINISTRACIÓN PARA LOS NEGOCIOS', type: 'business' },
+    { id: 'principios-economia', name: 'PRINCIPIOS DE ECONOMÍA', cycle: 3, prerequisite: 'NINGUNO', type: 'culinary' },
+    { id: 'panificacion-1', name: 'TÉCNICAS Y PROCESOS DE PANIFICACIÓN I', cycle: 3, prerequisite: 'SANIDAD E HIGIENE DE LOS ALIMENTOS Y BEBIDAS, FUNDAMENTOS Y TÉCNICAS DE COCINA I', type: 'culinary' },
+    { id: 'etica-ciudadania', name: 'ÉTICA Y CIUDADANÍA', cycle: 3, prerequisite: 'REALIDAD NACIONAL Y GLOBALIZACIÓN', type: 'culinary' },
 
-    // Ciclo 4
-    { id: 25, name: "ENGLISH IV", cycle: 4, prerequisites: [17], type: "culinary" },
-    { id: 26, name: "TÉCNICAS CULINARIAS AVANZADAS", cycle: 4, prerequisites: [18], type: "culinary" },
-    { id: 27, name: "TÉCNICAS AVANZADAS DE PASTELERÍA", cycle: 4, prerequisites: [19], type: "culinary" },
-    { id: 28, name: "CONTABILIDAD", cycle: 4, prerequisites: [], type: "business" },
-    { id: 29, name: "MARKETING", cycle: 4, prerequisites: [], type: "business" },
-    { id: 30, name: "ENOLOGÍA", cycle: 4, prerequisites: [], type: "business" },
-    { id: 31, name: "SEGURIDAD ALIMENTARIA", cycle: 4, prerequisites: [23], type: "business" },
-    { id: 32, name: "ACTIVIDAD FORMATIVA IV", cycle: 4, prerequisites: [24], type: "elective" },
+    // Cycle 4
+    { id: 'business-law-1', name: 'BUSINESS LAW I', cycle: 4, prerequisite: 'ADMINISTRACIÓN PARA LOS NEGOCIOS', type: 'business' },
+    { id: 'english-4', name: 'ENGLISH IV', cycle: 4, prerequisite: 'ENGLISH III', type: 'culinary' },
+    { id: 'frances-1', name: 'FRANCÉS I', cycle: 4, prerequisite: 'NINGUNO', type: 'business' },
+    { id: 'fundamentos-contables', name: 'FUNDAMENTOS CONTABLES Y FINANCIEROS', cycle: 4, prerequisite: 'NINGUNO', type: 'culinary' },
+    { id: 'liderazgo-sostenible', name: 'FUNDAMENTOS DEL LIDERAZGO SOSTENIBLE', cycle: 4, prerequisite: 'NINGUNO', type: 'culinary' },
+    { id: 'cocina-2', name: 'FUNDAMENTOS Y TÉCNICAS DE COCINA II', cycle: 4, prerequisite: 'FUNDAMENTOS Y TÉCNICAS DE COCINA I', type: 'culinary' },
+    { id: 'metodologia-investigacion', name: 'METODOLOGÍA DE LA INVESTIGACIÓN CIENTÍFICA', cycle: 4, prerequisite: 'NINGUNO', type: 'culinary' },
+    { id: 'microeconomia', name: 'MICROECONOMÍA', cycle: 4, prerequisite: 'PRINCIPIOS DE ECONOMÍA', type: 'culinary' },
 
-    // Ciclo 5
-    { id: 33, name: "COCINA PERUANA", cycle: 5, prerequisites: [26], type: "culinary" },
-    { id: 34, name: "PANADERÍA", cycle: 5, prerequisites: [27], type: "culinary" },
-    { id: 35, name: "COCINA INTERNACIONAL", cycle: 5, prerequisites: [26], type: "culinary" },
-    { id: 36, name: "COSTOS Y PRESUPUESTOS", cycle: 5, prerequisites: [28], type: "business" },
-    { id: 37, name: "GESTIÓN DE CALIDAD", cycle: 5, prerequisites: [31], type: "business" },
-    { id: 38, name: "INVESTIGACIÓN DE MERCADOS", cycle: 5, prerequisites: [20, 29], type: "business" },
-    { id: 39, name: "PSICOLOGÍA DEL CONSUMIDOR", cycle: 5, prerequisites: [29], type: "business" },
-    { id: 40, name: "ACTIVIDAD FORMATIVA V", cycle: 5, prerequisites: [32], type: "elective" },
+    // Cycle 5
+    { id: 'costos-alimentos', name: 'COSTOS DE ALIMENTOS Y BEBIDAS', cycle: 5, prerequisite: 'FUNDAMENTOS CONTABLES Y FINANCIEROS', type: 'culinary' },
+    { id: 'english-composition-1', name: 'ENGLISH COMPOSITION I', cycle: 5, prerequisite: 'ENGLISH IV', type: 'business' },
+    { id: 'environmental-sciences', name: 'ENVIRONMENTAL SCIENCES', cycle: 5, prerequisite: 'GENERAL BIOLOGY', type: 'business' },
+    { id: 'estadistica-2', name: 'ESTADÍSTICA II', cycle: 5, prerequisite: 'ESTADÍSTICA DESCRIPTIVA E INFERENCIA ESTADÍSTICA', type: 'business' },
+    { id: 'pasteleria-2', name: 'FUNDAMENTOS Y TÉCNICAS DE PASTELERÍA II', cycle: 5, prerequisite: 'FUNDAMENTOS Y TÉCNICAS DE PASTELERÍA I', type: 'culinary' },
+    { id: 'gastronomia-funcional', name: 'GASTRONOMÍA FUNCIONAL', cycle: 5, prerequisite: 'FUNDAMENTOS Y TÉCNICAS DE COCINA II', type: 'culinary' },
+    { id: 'marketing', name: 'MARKETING', cycle: 5, prerequisite: 'ADMINISTRACIÓN PARA LOS NEGOCIOS', type: 'culinary' },
+    { id: 'tecnicas-servicio', name: 'TÉCNICAS DE SERVICIO DE ALIMENTOS Y BEBIDAS', cycle: 5, prerequisite: 'NINGUNO', type: 'culinary' },
+    { id: 'panificacion-2', name: 'TÉCNICAS Y PROCESOS DE PANIFICACIÓN II', cycle: 5, prerequisite: 'TÉCNICAS Y PROCESOS DE PANIFICACIÓN I', type: 'culinary' },
 
-    // Ciclo 6
-    { id: 41, name: "COCINA PERUANA AVANZADA", cycle: 6, prerequisites: [33], type: "culinary" },
-    { id: 42, name: "PANADERÍA AVANZADA", cycle: 6, prerequisites: [34], type: "culinary" },
-    { id: 43, name: "COCINA INTERNACIONAL AVANZADA", cycle: 6, prerequisites: [35], type: "culinary" },
-    { id: 44, name: "FINANZAS", cycle: 6, prerequisites: [36], type: "business" },
-    { id: 45, name: "GESTIÓN DE OPERACIONES", cycle: 6, prerequisites: [37], type: "business" },
-    { id: 46, name: "COMPORTAMIENTO ORGANIZACIONAL", cycle: 6, prerequisites: [21], type: "business" },
-    { id: 47, name: "EMPRENDIMIENTO", cycle: 6, prerequisites: [38], type: "business" },
-    { id: 48, name: "ACTIVIDAD FORMATIVA VI", cycle: 6, prerequisites: [40], type: "elective" },
+    // Cycle 6
+    { id: 'analisis-gerencial', name: 'ANÁLISIS GERENCIAL DE LA INFORMACIÓN FINANCIERA', cycle: 6, prerequisite: 'FUNDAMENTOS CONTABLES Y FINANCIEROS', type: 'culinary' },
+    { id: 'business-law-2', name: 'BUSINESS LAW II', cycle: 6, prerequisite: 'BUSINESS LAW I', type: 'business' },
+    { id: 'cocina-peruana', name: 'COCINA PERUANA TRADICIONAL Y CONTEMPORÁNEA', cycle: 6, prerequisite: 'FUNDAMENTOS Y TÉCNICAS DE COCINA II', type: 'culinary' },
+    { id: 'english-composition-2', name: 'ENGLISH COMPOSITION II', cycle: 6, prerequisite: 'ENGLISH COMPOSITION I', type: 'business' },
+    { id: 'gestion-culinaria', name: 'GESTIÓN CULINARIA', cycle: 6, prerequisite: 'ENGLISH IV, FUNDAMENTOS EN COMPETENCIAS DIGITALES', type: 'culinary' },
+    { id: 'gestion-financiera-1', name: 'GESTIÓN FINANCIERA I', cycle: 6, prerequisite: 'FUNDAMENTOS CONTABLES Y FINANCIEROS', type: 'business' },
+    { id: 'investigacion-mercado', name: 'INVESTIGACIÓN Y ANÁLISIS DE MERCADO', cycle: 6, prerequisite: 'MARKETING, ESTADÍSTICA DESCRIPTIVA E INFERENCIA ESTADÍSTICA', type: 'culinary' },
+    { id: 'oportunidades-negocios', name: 'OPORTUNIDADES DE NEGOCIOS', cycle: 6, prerequisite: 'PRINCIPIOS DE ECONOMÍA, MARKETING, FUNDAMENTOS CONTABLES Y FINANCIEROS', type: 'culinary' },
 
-    // Ciclo 7
-    { id: 49, name: "COCINA FUSIÓN", cycle: 7, prerequisites: [41, 43], type: "culinary" },
-    { id: 50, name: "CHOCOLATERÍA", cycle: 7, prerequisites: [42], type: "culinary" },
-    { id: 51, name: "COCINA MOLECULAR", cycle: 7, prerequisites: [41, 43], type: "culinary" },
-    { id: 52, name: "PLAN DE NEGOCIOS", cycle: 7, prerequisites: [44, 47], type: "business" },
-    { id: 53, name: "GESTIÓN DE PROYECTOS", cycle: 7, prerequisites: [45], type: "business" },
-    { id: 54, name: "LIDERAZGO", cycle: 7, prerequisites: [46], type: "business" },
-    { id: 55, name: "INNOVACIÓN GASTRONÓMICA", cycle: 7, prerequisites: [49], type: "business" },
-    { id: 56, name: "ACTIVIDAD FORMATIVA VII", cycle: 7, prerequisites: [48], type: "elective" },
+    // Cycle 7
+    { id: 'catering-management', name: 'CATERING MANAGEMENT AND HIGH VOLUME PRODUCTION', cycle: 7, prerequisite: 'GESTIÓN CULINARIA', type: 'culinary' },
+    { id: 'cocina-mediterranea', name: 'COCINA MEDITERRÁNEA', cycle: 7, prerequisite: 'FUNDAMENTOS Y TÉCNICAS DE COCINA II', type: 'culinary' },
+    { id: 'contabilidad-avanzada', name: 'CONTABILIDAD AVANZADA', cycle: 7, prerequisite: 'FUNDAMENTOS CONTABLES Y FINANCIEROS', type: 'business' },
+    { id: 'diseno-equipamiento', name: 'DISEÑO Y EQUIPAMIENTO GASTRONÓMICO', cycle: 7, prerequisite: 'GESTIÓN CULINARIA', type: 'culinary' },
+    { id: 'garde-manger', name: 'GARDE MANGER', cycle: 7, prerequisite: 'FUNDAMENTOS Y TÉCNICAS DE COCINA II', type: 'culinary' },
+    { id: 'electivo-1', name: 'ELECTIVO I', cycle: 7, prerequisite: 'NINGUNO', type: 'elective' },
+    { id: 'gestion-financiera-2', name: 'GESTIÓN FINANCIERA II', cycle: 7, prerequisite: 'GESTIÓN FINANCIERA I', type: 'business' },
+    { id: 'public-speaking', name: 'PUBLIC SPEAKING', cycle: 7, prerequisite: 'ENGLISH IV', type: 'business' },
 
-    // Ciclo 8
-    { id: 57, name: "COCINA DE AUTOR", cycle: 8, prerequisites: [49, 51], type: "culinary" },
-    { id: 58, name: "DECORACIÓN Y PRESENTACIÓN", cycle: 8, prerequisites: [50], type: "culinary" },
-    { id: 59, name: "COCINA DIETÉTICA", cycle: 8, prerequisites: [51], type: "culinary" },
-    { id: 60, name: "GESTIÓN FINANCIERA", cycle: 8, prerequisites: [52], type: "business" },
-    { id: 61, name: "GESTIÓN DE MARCA", cycle: 8, prerequisites: [53], type: "business" },
-    { id: 62, name: "NEGOCIACIÓN", cycle: 8, prerequisites: [54], type: "business" },
-    { id: 63, name: "SOSTENIBILIDAD GASTRONÓMICA", cycle: 8, prerequisites: [55], type: "business" },
-    { id: 64, name: "ACTIVIDAD FORMATIVA VIII", cycle: 8, prerequisites: [56], type: "elective" },
+    // Cycle 8
+    { id: 'contabilidad-gestion', name: 'CONTABILIDAD DE GESTIÓN', cycle: 8, prerequisite: 'CONTABILIDAD AVANZADA', type: 'business' },
+    { id: 'evaluacion-proyectos', name: 'EVALUACIÓN DE PROYECTOS', cycle: 8, prerequisite: 'INVESTIGACIÓN Y ANÁLISIS DE MERCADO, OPORTUNIDADES DE NEGOCIOS', type: 'culinary' },
+    { id: 'food-design', name: 'FOOD DESIGN', cycle: 8, prerequisite: 'FUNDAMENTOS Y TÉCNICAS DE PASTELERÍA II, FUNDAMENTOS Y TÉCNICAS DE COCINA II', type: 'culinary' },
+    { id: 'gerencia-marketing', name: 'GERENCIA DE MARKETING', cycle: 8, prerequisite: 'MARKETING', type: 'business' },
+    { id: 'innovacion-tendencias', name: 'INNOVACIÓN Y NUEVAS TENDENCIAS CULINARIAS', cycle: 8, prerequisite: 'GESTIÓN CULINARIA, FUNDAMENTOS Y TÉCNICAS DE COCINA II', type: 'culinary' },
+    { id: 'managing-hr', name: 'MANAGING HOSPITALITY HUMAN RESOURCES', cycle: 8, prerequisite: 'FUNDAMENTOS DEL LIDERAZGO SOSTENIBLE', type: 'culinary' },
+    { id: 'operaciones-logistica', name: 'OPERACIONES Y LOGÍSTICA', cycle: 8, prerequisite: 'GESTIÓN DE EMPRESAS', type: 'business' },
+    { id: 'electivo-2', name: 'ELECTIVO II', cycle: 8, prerequisite: 'NINGUNO', type: 'elective' },
 
-    // Ciclo 9
-    { id: 65, name: "ALTA COCINA", cycle: 9, prerequisites: [57], type: "culinary" },
-    { id: 66, name: "CAKE DESIGN", cycle: 9, prerequisites: [58], type: "culinary" },
-    { id: 67, name: "COCINA TERAPÉUTICA", cycle: 9, prerequisites: [59], type: "culinary" },
-    { id: 68, name: "GESTIÓN ESTRATÉGICA", cycle: 9, prerequisites: [60], type: "business" },
-    { id: 69, name: "MARKETING DIGITAL", cycle: 9, prerequisites: [61], type: "business" },
-    { id: 70, name: "CONSULTORÍA GASTRONÓMICA", cycle: 9, prerequisites: [62], type: "business" },
-    { id: 71, name: "GASTRONOMÍA SOCIAL", cycle: 9, prerequisites: [63], type: "business" },
-    { id: 72, name: "ACTIVIDAD FORMATIVA IX", cycle: 9, prerequisites: [64], type: "elective" },
+    // Cycle 9
+    { id: 'proyecto-tesis-1', name: 'PROYECTO DE TESIS I', cycle: 9, prerequisite: 'METODOLOGÍA DE LA INVESTIGACIÓN CIENTÍFICA', type: 'culinary' },
+    { id: 'cocina-oriental', name: 'COCINA ORIENTAL', cycle: 9, prerequisite: 'FUNDAMENTOS Y TÉCNICAS DE COCINA II', type: 'culinary' },
+    { id: 'proyecto-integrador', name: 'PROYECTO INTEGRADOR', cycle: 9, prerequisite: 'EVALUACIÓN DE PROYECTOS', type: 'culinary' },
+    { id: 'english-culinary', name: 'ENGLISH FOR CULINARY APPLICATION', cycle: 9, prerequisite: 'ENGLISH IV', type: 'culinary' },
+    { id: 'electivo-3', name: 'ELECTIVO III', cycle: 9, prerequisite: 'NINGUNO', type: 'elective' },
+    { id: 'comportamiento-organizacional', name: 'COMPORTAMIENTO Y CLIMA ORGANIZACIONAL', cycle: 9, prerequisite: 'GESTIÓN DE EMPRESAS', type: 'business' },
+    { id: 'e-marketing', name: 'E-MARKETING FOR BUSINESS', cycle: 9, prerequisite: 'GERENCIA DE MARKETING', type: 'business' },
+    { id: 'estrategias-gerenciales', name: 'ESTRATEGIAS GERENCIALES', cycle: 9, prerequisite: 'GESTIÓN DE EMPRESAS', type: 'business' },
 
-    // Ciclo 10
-    { id: 73, name: "MAESTRÍA CULINARIA", cycle: 10, prerequisites: [65], type: "culinary" },
-    { id: 74, name: "PASTELERÍA ARTÍSTICA", cycle: 10, prerequisites: [66], type: "culinary" },
-    { id: 75, name: "INVESTIGACIÓN GASTRONÓMICA", cycle: 10, prerequisites: [67], type: "culinary" },
-    { id: 76, name: "DIRECCIÓN GENERAL", cycle: 10, prerequisites: [68], type: "business" },
-    { id: 77, name: "GESTIÓN DE RESTAURANTES", cycle: 10, prerequisites: [69], type: "business" },
-    { id: 78, name: "CONSULTORÍA EMPRESARIAL", cycle: 10, prerequisites: [70], type: "business" },
-    { id: 79, name: "RESPONSABILIDAD SOCIAL", cycle: 10, prerequisites: [71], type: "business" },
-    { id: 80, name: "TESIS I", cycle: 10, prerequisites: [72], type: "elective" },
-    { id: 81, name: "TESIS II", cycle: 10, prerequisites: [80], type: "elective" },
-    { id: 82, name: "ACTIVIDAD FORMATIVA X", cycle: 10, prerequisites: [72], type: "elective" }
+    // Cycle 10
+    { id: 'proyecto-tesis-2', name: 'PROYECTO DE TESIS II', cycle: 10, prerequisite: 'PROYECTO DE TESIS I', type: 'culinary' },
+    { id: 'tecnicas-vanguardia', name: 'TÉCNICAS EN EL ARTE CULINARIO DE VANGUARDIA', cycle: 10, prerequisite: 'FUNDAMENTOS Y TÉCNICAS DE COCINA II', type: 'culinary' },
+    { id: 'desarrollo-concepto', name: 'DESARROLLO DE CONCEPTO', cycle: 10, prerequisite: 'INNOVACIÓN Y NUEVAS TENDENCIAS CULINARIAS', type: 'culinary' },
+    { id: 'electivo-4', name: 'ELECTIVO IV', cycle: 10, prerequisite: 'NINGUNO', type: 'elective' },
+    { id: 'electivo-5', name: 'ELECTIVO V', cycle: 10, prerequisite: 'NINGUNO', type: 'elective' },
+    { id: 'business-capstone', name: 'BUSINESS CAPSTONE', cycle: 10, prerequisite: 'COMPORTAMIENTO Y CLIMA ORGANIZACIONAL', type: 'business' },
+    { id: 'global-business', name: 'GLOBAL BUSINESS STRATEGY', cycle: 10, prerequisite: 'NINGUNO', type: 'business' },
+    { id: 'liderazgo-organizacional', name: 'LIDERAZGO ORGANIZACIONAL', cycle: 10, prerequisite: 'GESTIÓN DE EMPRESAS', type: 'business' },
+    { id: 'negociacion-liderazgo', name: 'NEGOCIACIÓN Y LIDERAZGO COMERCIAL', cycle: 10, prerequisite: 'GESTIÓN DE EMPRESAS', type: 'business' },
 ];
 
 // Estado de la aplicación
-let selectedCourses = new Set();
-let customCourseNames = {};
+let selectedCourses = [];
+let editableCourses = {};
 
 // Inicializar la aplicación
 document.addEventListener('DOMContentLoaded', function() {
@@ -121,19 +121,19 @@ document.addEventListener('DOMContentLoaded', function() {
 function loadState() {
     const saved = localStorage.getItem('selectedCourses');
     if (saved) {
-        selectedCourses = new Set(JSON.parse(saved));
+        selectedCourses = JSON.parse(saved);
     }
     
-    const savedNames = localStorage.getItem('customCourseNames');
+    const savedNames = localStorage.getItem('editableCourses');
     if (savedNames) {
-        customCourseNames = JSON.parse(savedNames);
+        editableCourses = JSON.parse(savedNames);
     }
 }
 
 // Guardar estado en localStorage
 function saveState() {
-    localStorage.setItem('selectedCourses', JSON.stringify([...selectedCourses]));
-    localStorage.setItem('customCourseNames', JSON.stringify(customCourseNames));
+    localStorage.setItem('selectedCourses', JSON.stringify(selectedCourses));
+    localStorage.setItem('editableCourses', JSON.stringify(editableCourses));
 }
 
 // Renderizar el currículum
@@ -153,17 +153,13 @@ function renderCurriculum() {
     // Renderizar cada ciclo
     for (let cycle = 1; cycle <= 10; cycle++) {
         const cycleDiv = document.createElement('div');
-        cycleDiv.className = 'cycle';
+        cycleDiv.className = 'cycle-column';
         
-        const cycleHeader = document.createElement('div');
-        cycleHeader.className = 'cycle-header';
-        cycleHeader.innerHTML = `
-            <h2>Ciclo ${cycle}</h2>
-            <div class="cycle-subtitle">Semestre ${Math.ceil(cycle / 2)}</div>
-        `;
+        const cycleTitle = document.createElement('h3');
+        cycleTitle.className = 'cycle-title';
+        cycleTitle.textContent = `Ciclo ${cycle}`;
         
-        const coursesGrid = document.createElement('div');
-        coursesGrid.className = 'courses-grid';
+        cycleDiv.appendChild(cycleTitle);
         
         // Ordenar cursos: primero Culinary, luego Business, luego Elective
         const sortedCourses = coursesByCycle[cycle].sort((a, b) => {
@@ -173,11 +169,9 @@ function renderCurriculum() {
         
         sortedCourses.forEach(course => {
             const courseCard = createCourseCard(course);
-            coursesGrid.appendChild(courseCard);
+            cycleDiv.appendChild(courseCard);
         });
         
-        cycleDiv.appendChild(cycleHeader);
-        cycleDiv.appendChild(coursesGrid);
         container.appendChild(cycleDiv);
     }
 }
@@ -188,9 +182,10 @@ function createCourseCard(course) {
     card.className = 'course-card';
     card.id = `course-${course.id}`;
     
-    const isSelected = selectedCourses.has(course.id);
+    const isSelected = selectedCourses.includes(course.id);
     const canSelect = canSelectCourse(course);
     
+    // Aplicar clases según el estado
     if (isSelected) {
         card.classList.add('selected');
     }
@@ -199,57 +194,60 @@ function createCourseCard(course) {
         card.classList.add('disabled');
     }
     
-    const courseName = customCourseNames[course.id] || course.name;
+    // Aplicar clases según el tipo
+    if (course.type === 'business') {
+        card.classList.add('business');
+    } else if (course.type === 'elective') {
+        card.classList.add('elective');
+    }
+    
+    const courseName = editableCourses[course.id] || course.name;
     const isElective = course.type === 'elective';
     
-    card.innerHTML = `
-        <div class="course-header">
-            <div class="course-name">
-                ${isElective ? 
-                    `<input type="text" value="${courseName}" data-course-id="${course.id}" />` :
-                    courseName
-                }
-            </div>
-            <div class="course-type ${course.type}">
-                ${course.type === 'culinary' ? 'Culinaria' : 
-                  course.type === 'business' ? 'Negocios' : 'Electivo'}
-            </div>
-        </div>
-        <div class="course-details">
-            <div class="course-cycle">Ciclo ${course.cycle}</div>
-            <div class="course-prerequisites">
-                ${course.prerequisites.length > 0 ? 
-                    `Req: ${course.prerequisites.join(', ')}` : 
-                    'Sin requisitos'
-                }
-            </div>
-        </div>
-        <div class="selected-indicator">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-        </div>
-    `;
+    // Crear contenido de la tarjeta
+    const courseContent = document.createElement('div');
+    courseContent.className = 'font-semibold text-xs w-full';
+    
+    if (isElective) {
+        const span = document.createElement('span');
+        span.className = 'editable-course';
+        span.textContent = courseName;
+        span.setAttribute('contenteditable', 'true');
+        span.addEventListener('blur', function() {
+            if (this.textContent.trim()) {
+                editableCourses[course.id] = this.textContent.trim();
+                saveState();
+            }
+        });
+        span.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                this.blur();
+            }
+        });
+        span.addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+        courseContent.appendChild(span);
+    } else {
+        courseContent.textContent = courseName;
+    }
+    
+    card.appendChild(courseContent);
+    
+    // Agregar tooltip para prerrequisitos
+    if (course.prerequisite && course.prerequisite !== 'NINGUNO') {
+        const tooltip = document.createElement('div');
+        tooltip.className = 'tooltip';
+        tooltip.textContent = `Prerrequisito: ${course.prerequisite}`;
+        card.appendChild(tooltip);
+    }
     
     // Event listeners
     if (canSelect || isSelected) {
         card.addEventListener('click', function(e) {
-            if (e.target.tagName === 'INPUT') return;
+            if (e.target.getAttribute('contenteditable') === 'true') return;
             toggleCourse(course.id);
-        });
-    }
-    
-    // Event listener para inputs editables
-    const input = card.querySelector('input');
-    if (input) {
-        input.addEventListener('input', function(e) {
-            e.stopPropagation();
-            customCourseNames[course.id] = e.target.value;
-            saveState();
-        });
-        
-        input.addEventListener('click', function(e) {
-            e.stopPropagation();
         });
     }
     
@@ -258,19 +256,32 @@ function createCourseCard(course) {
 
 // Verificar si se puede seleccionar un curso
 function canSelectCourse(course) {
-    return course.prerequisites.every(prereqId => selectedCourses.has(prereqId));
+    if (selectedCourses.includes(course.id)) {
+        return true; // Ya está seleccionado, se puede deseleccionar
+    }
+    
+    if (!course.prerequisite || course.prerequisite === 'NINGUNO') {
+        return true; // No tiene prerrequisitos
+    }
+    
+    // Verificar si todos los prerrequisitos están cumplidos
+    const prerequisites = course.prerequisite.split(', ').map(req => req.trim());
+    return prerequisites.every(reqName => {
+        const reqCourse = courses.find(c => c.name === reqName);
+        return reqCourse && selectedCourses.includes(reqCourse.id);
+    });
 }
 
 // Alternar selección de curso
 function toggleCourse(courseId) {
-    if (selectedCourses.has(courseId)) {
-        // Deseleccionar curso y todos los que dependen de él
-        deselectCourseAndDependents(courseId);
+    if (selectedCourses.includes(courseId)) {
+        // Deseleccionar curso
+        selectedCourses = selectedCourses.filter(id => id !== courseId);
     } else {
         // Seleccionar curso si se cumplen los prerrequisitos
         const course = courses.find(c => c.id === courseId);
         if (canSelectCourse(course)) {
-            selectedCourses.add(courseId);
+            selectedCourses.push(courseId);
         }
     }
     
@@ -279,28 +290,13 @@ function toggleCourse(courseId) {
     updateProgress();
 }
 
-// Deseleccionar curso y dependientes
-function deselectCourseAndDependents(courseId) {
-    selectedCourses.delete(courseId);
-    
-    // Encontrar cursos que dependen de este
-    const dependents = courses.filter(course => 
-        course.prerequisites.includes(courseId) && selectedCourses.has(course.id)
-    );
-    
-    // Deseleccionar recursivamente
-    dependents.forEach(dependent => {
-        deselectCourseAndDependents(dependent.id);
-    });
-}
-
 // Actualizar tarjetas de cursos
 function updateCourseCards() {
     courses.forEach(course => {
         const card = document.getElementById(`course-${course.id}`);
         if (!card) return;
         
-        const isSelected = selectedCourses.has(course.id);
+        const isSelected = selectedCourses.includes(course.id);
         const canSelect = canSelectCourse(course);
         
         card.classList.toggle('selected', isSelected);
@@ -311,7 +307,7 @@ function updateCourseCards() {
 // Actualizar progreso
 function updateProgress() {
     const totalCourses = courses.length;
-    const completedCourses = selectedCourses.size;
+    const completedCourses = selectedCourses.length;
     const percentage = (completedCourses / totalCourses) * 100;
     
     document.getElementById('progress-count').textContent = completedCourses;
@@ -329,8 +325,8 @@ function updateProgress() {
 // Reiniciar selección
 function resetSelection() {
     if (confirm('¿Estás seguro de que quieres reiniciar tu selección?')) {
-        selectedCourses.clear();
-        customCourseNames = {};
+        selectedCourses = [];
+        editableCourses = {};
         saveState();
         renderCurriculum();
         updateProgress();
