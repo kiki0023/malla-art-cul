@@ -44,7 +44,6 @@ const courses = [
     { id: 'costos-alimentos', name: 'COSTOS DE ALIMENTOS Y BEBIDAS', cycle: 5, prerequisite: 'FUNDAMENTOS CONTABLES Y FINANCIEROS', type: 'culinary' },
     { id: 'english-composition-1', name: 'ENGLISH COMPOSITION I', cycle: 5, prerequisite: 'ENGLISH IV', type: 'business' },
     { id: 'environmental-sciences', name: 'ENVIRONMENTAL SCIENCES', cycle: 5, prerequisite: 'GENERAL BIOLOGY', type: 'business' },
-    { id: 'estadistica-2', name: 'ESTADÍSTICA II', cycle: 5, prerequisite: 'ESTADÍSTICA DESCRIPTIVA E INFERENCIA ESTADÍSTICA', type: 'business' },
     { id: 'pasteleria-2', name: 'FUNDAMENTOS Y TÉCNICAS DE PASTELERÍA II', cycle: 5, prerequisite: 'FUNDAMENTOS Y TÉCNICAS DE PASTELERÍA I', type: 'culinary' },
     { id: 'gastronomia-funcional', name: 'GASTRONOMÍA FUNCIONAL', cycle: 5, prerequisite: 'FUNDAMENTOS Y TÉCNICAS DE COCINA II', type: 'culinary' },
     { id: 'marketing', name: 'MARKETING', cycle: 5, prerequisite: 'ADMINISTRACIÓN PARA LOS NEGOCIOS', type: 'culinary' },
